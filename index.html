@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TechNjoy</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect "href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onkeyDown="myFunction(event)" onmousedown="WhichButton(event)">
+	<script>
+function myFunction(event) 
+{
+  var x = event.keyCode;
+  if(x==93)
+  {
+  
+  alert("Right Cilck Restruction");
+  
+	}
+}
+
+function WhichButton(event)
+{
+	var a = event.button;
+    if(a==2)
+    {
+    	alert("Right Cilck Restruction");
+    }
+}
+</script>
+	<section class="menu-bar">
+		<nav>
+			<a href="index.html"><img src="images/logo.jpg"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Courses</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">Contact Us</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+</section>
+	<section class="header">
+		<div class="text-box">	
+		<h1> Enjoy and Learn the Technology</h1><br><br>
+		<p>Nowadays we are lagging interest in studies because we don't understand the escence of the Education.<br>and the quality Education is costly. We bring the solution for that....</p>
+		<a href="" class="hero-btn">Visit us to know more</a>
+		</div>
+	</section>
+
+<!-----------------------------Course---------------------------------->
+
+<section class="course">	
+	<h1>Courses We Offer</h1>
+	<p>Website Development using HTML and CSS</p>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-----------Javascript for Toggle Menu----------------------->
+	<script> 
+			var navLinks = document.getElementById("navLinks");
+			function showMenu(){
+				navLinks.style.width = "50%";
+			}
+			function hideMenu(){
+				navLinks.style.width = "0";
+			}
+	</script>
+</body>
+</html>
