@@ -16,7 +16,7 @@
 	position: relative;
 	background-position: relative;
 	background-size: cover;
-	animation: slider 20s infinite linear;
+	animation: slider 16s infinite linear;
 }
 @keyframes slider{
 	0%{background-image: url("images/slider/slide-1.jpg");}
