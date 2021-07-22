@@ -14,7 +14,7 @@
 	min-height: 125vh;
 	width: 100%;
 	position: relative;
-	background-position: center;
+	background-position: relative;
 	background-size: cover;
 	animation: slider 20s infinite linear;
 }
