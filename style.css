@@ -14,10 +14,16 @@
 	min-height: 125vh;
 	width: 100%;
 	position: relative;
-	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/banner.jpg")
-	; 
 	background-position: center;
 	background-size: cover;
+	animation: slider 20s infinite linear;
+}
+@keyframes slider{
+	0%{background-image: url("images/slider/slide-1.jpg");}
+	25%{background-image: url("images/slider/slide-2.jpg");}
+	50%{background-image: url("images/slider/slide-3.jpg");}
+	75%{background-image: url("images/slider/slide-4.jpg");}
+	100%{background-image: url("images/slider/slide-5.jpg");}
 }
 nav{
 	display: flex;
@@ -57,7 +63,8 @@ nav img{
 }
 .text-box{
 	width: 	100%;
-	color: 	#FF8C00;
+	color:#FF0000;
+	/*color: 	#FF8C00;*/
 	position: 	absolute;	
 	top: 	50%;
 	left: 	50%;
@@ -73,7 +80,7 @@ nav img{
 .text-box p{
 	margin: 	10px 0 40px;
 	font-size: 	20px;
-	color: #FF8C00;
+	color: #FFFF00;
 }
 .hero-btn{
 	display: 	inline-block;	
@@ -97,6 +104,11 @@ nav .fa{
 	display: 	none;
 }
 @media(max-width: 900px){
+	.header{
+	min-height: 125vh;
+	width: 100%;
+	position: relative;
+}
 	.text-box h1{
 	font-size: 	30px;
 }
@@ -183,6 +195,14 @@ p{
 	padding: 	10px;
 }
 
+.row{
+	margin-top: 2.5%;
+	/*min-height: 40vh;
+	width: 100%;
+	background-position: relative;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/row1.png");*/
+	display: flex;
+}
 
 
 
